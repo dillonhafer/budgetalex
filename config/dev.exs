@@ -50,8 +50,7 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :budgetalex, Budgetalex.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
   database: "budgetalex_dev",
-  hostname: "localhost",
+  hostname: "/var/run/postgresql",
+  fallback_application_name: "budgetalex",
   pool_size: 10
