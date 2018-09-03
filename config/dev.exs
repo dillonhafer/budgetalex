@@ -52,4 +52,5 @@ config :budgetalex, Budgetalex.Repo,
   adapter: Ecto.Adapters.Postgres,
   database: "budgetalex_dev",
   socket_dir: "/var/run/postgresql",
+  parameters: [application_name: "Budgetal Ex", statement_timeout: "5000"],
   pool_size: 10
