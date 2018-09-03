@@ -51,6 +51,5 @@ config :phoenix, :stacktrace_depth, 20
 config :budgetalex, Budgetalex.Repo,
   adapter: Ecto.Adapters.Postgres,
   database: "budgetalex_dev",
-  hostname: "/var/run/postgresql",
-  fallback_application_name: "budgetalex",
+  socket_dir: "/var/run/postgresql",
   pool_size: 10
